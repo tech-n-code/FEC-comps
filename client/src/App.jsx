@@ -1,12 +1,14 @@
-import { useState } from 'react'
-import './App.css'
+import { useState } from "react";
+import "./App.css";
+import Header from "./components/Header/Header";
+import Ratings from "./components/Ratings/Ratings";
+import Camping_spots from "./components/Camping_spots/Camping_spots";
 
 function App() {
-
     return (
         <>
             <div>
-                <h1>Header</h1>
+                <Header />
             </div>
             <h1>Campsite name, rating, location (Genglin)</h1>
             <h1>Photo Gallery (Dennis)</h1>
@@ -16,18 +18,18 @@ function App() {
             <h1>Location (Dan)</h1>
             <h1>Hosted by (Dennis)</h1>
             <div>
-                <h1>Ratings</h1>
+                <Ratings />
             </div>
             <h1>Things to do (Dan)</h1>
             <div>
-                <h1>Camping Spots</h1>
+                <Camping_spots />
             </div>
             <h1>Campers also viewed (Chris)</h1>
             <h1>Camp Safety (Dennis)</h1>
             <h1>Safety & Partners (Dan)</h1>
             <h1>Footer (Chris)</h1>
         </>
-    )
+    );
 }
 
-export default App
+export default App;
